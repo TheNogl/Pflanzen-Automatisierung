@@ -2,9 +2,10 @@ Datenstrom Ablauf:
 Master: Start 
 Master: Address 7bit, Read 1bit
 Slave: Acknowledge
-Master: Taskcode 
+Master: Taskcode 1 Byte
 Slave: Acknowledge
-Master: Slave transmit
+Master: Write 1bit ??????????????
+Slave: Acknowledge ??????????????
 Slave: Data
 Master: Acknowledge
-Master: Slave listen
+Master: Stop
