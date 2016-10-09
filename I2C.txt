@@ -4,8 +4,8 @@ Master: Address 7bit, Read 1bit
 Slave: Acknowledge
 Master: Taskcode 1 Byte
 Slave: Acknowledge
-Master: Write 1bit ??????????????
-Slave: Acknowledge ??????????????
+Master: Address 7bit, Write 1bit 
+Slave: Acknowledge
 Slave: Data
 Master: Acknowledge
 Master: Stop
