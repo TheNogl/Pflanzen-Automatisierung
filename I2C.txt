@@ -9,3 +9,30 @@ Slave: Acknowledge
 Slave: Data
 Master: Acknowledge
 Master: Stop
+
+Master Taskcodes:
+Bodenfeuchtigkeit: 0x01
+Lufttemperatur: 0x02
+Luftfeuchtigkeit: 0x03
+Leuchtstärke Rot: 0x04
+Leuchtstärke Blau: 0x05
+Zeit seit letzter Bewässerung Tage: 0x06
+Zeit seit letzter Bewässerung Stunden: 0x07
+Zeit seit letzter Bewässerung Minuten: 0x08
+Zeit seit Bepflanzung Tage: 0x09
+Zeit seit Bepflanzung Stunden: 0x0A
+Zeit seit Bepflanzung Minuten: 0x0B
+Änderung Temperatur +1°: 0x0C
+Änderung Temperatur -1°: 0x0D
+Änderung Temperatur +5°: 0x0E
+Änderung Temperatur -5°: 0x0F
+Änderung Lichtstärke Rot +1%: 0x10
+Änderung Lichtstärke Rot -1%: 0x11
+Änderung Lichtstärke Rot +5%: 0x12
+Änderung Lichtstärke Rot -5%: 0x13
+Änderung Lichtstärke Blau +1%: 0x14
+Änderung Lichtstärke Blau -1%: 0x15
+Änderung Lichtstärke Blau +5%: 0x16
+Änderung Lichtstärke Blau -5%: 0x17
+
+Pflanzenänderung: 0x30...0xFF         207 verschiedene Pflanzen möglich
