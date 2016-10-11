@@ -11,28 +11,28 @@ Master: Acknowledge
 Master: Stop
 
 Master Taskcodes:
-Bodenfeuchtigkeit: 0x01
-Lufttemperatur: 0x02
-Luftfeuchtigkeit: 0x03
-Leuchtstärke Rot: 0x04
-Leuchtstärke Blau: 0x05
-Zeit seit letzter Bewässerung Tage: 0x06
-Zeit seit letzter Bewässerung Stunden: 0x07
-Zeit seit letzter Bewässerung Minuten: 0x08
-Zeit seit Bepflanzung Tage: 0x09
-Zeit seit Bepflanzung Stunden: 0x0A
-Zeit seit Bepflanzung Minuten: 0x0B
-Änderung Temperatur +1°: 0x0C
-Änderung Temperatur -1°: 0x0D
-Änderung Temperatur +5°: 0x0E
-Änderung Temperatur -5°: 0x0F
-Änderung Lichtstärke Rot +1%: 0x10
-Änderung Lichtstärke Rot -1%: 0x11
-Änderung Lichtstärke Rot +5%: 0x12
-Änderung Lichtstärke Rot -5%: 0x13
-Änderung Lichtstärke Blau +1%: 0x14
-Änderung Lichtstärke Blau -1%: 0x15
-Änderung Lichtstärke Blau +5%: 0x16
-Änderung Lichtstärke Blau -5%: 0x17
+Bodenfeuchtigkeit: 0x01                       RETURN: 0...255*5/256 [V]
+Lufttemperatur: 0x02                          RETURN: 0...255 100=20°C, 0,1°/1
+Luftfeuchtigkeit: 0x03                        RETURN: 0...255*5/256 [V]
+Leuchtstärke Rot: 0x04                        RETURN: 0...255*100/256 [%]
+Leuchtstärke Blau: 0x05                       RETURN: 0...255*100/256 [%]
+Zeit seit letzter Bewässerung Tage: 0x06        |
+Zeit seit letzter Bewässerung Stunden: 0x07     | RETURN: dd:hh:mm   
+Zeit seit letzter Bewässerung Minuten: 0x08     |
+Zeit seit Bepflanzung Tage: 0x09        |
+Zeit seit Bepflanzung Stunden: 0x0A     | RETURN: dd:hh:mm 
+Zeit seit Bepflanzung Minuten: 0x0B     |
+Änderung Temperatur +1°: 0x0C           RETURN: 0xFF
+Änderung Temperatur -1°: 0x0D           RETURN: 0xFF
+Änderung Temperatur +5°: 0x0E           RETURN: 0xFF
+Änderung Temperatur -5°: 0x0F           RETURN: 0xFF
+Änderung Lichtstärke Rot +1%: 0x10           RETURN: 0xFF
+Änderung Lichtstärke Rot -1%: 0x11           RETURN: 0xFF
+Änderung Lichtstärke Rot +5%: 0x12           RETURN: 0xFF
+Änderung Lichtstärke Rot -5%: 0x13           RETURN: 0xFF
+Änderung Lichtstärke Blau +1%: 0x14           RETURN: 0xFF
+Änderung Lichtstärke Blau -1%: 0x15           RETURN: 0xFF
+Änderung Lichtstärke Blau +5%: 0x16           RETURN: 0xFF
+Änderung Lichtstärke Blau -5%: 0x17           RETURN: 0xFF
 
-Pflanzenänderung: 0x30...0xFF         207 verschiedene Pflanzen möglich
+Pflanzenänderung: 0x30...0xFF         207 verschiedene Pflanzen möglich           RETURN: 0xFF
