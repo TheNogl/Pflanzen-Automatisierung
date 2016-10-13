@@ -32,12 +32,13 @@ int main(void)
             {
             case SLAVE_READ:
                 datain = slave_read_ack();
+                PORTD |= 0x80;
                 break;
 
             case SLAVE_WRITE:
                 slave_send(dataout);
                 datain = 0;
-                PORTD=~(PORTD&0x80);
+                PORTD&=0x7F;
                 break;
             }
         }
@@ -57,6 +58,7 @@ char init_spi(unsigned char addr, unsigned int bitrate)
     if (TWBR < 11) return 0;
     TWAR = (addr << 1);
     TWCR = 0x44;
+    PORTD |= 0x80;
     return 1;
 }
 
