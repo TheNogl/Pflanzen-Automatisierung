@@ -1,0 +1,18 @@
+Feuchtigkeitsmessung: U0=5,08V, R=12kOhm
+Trocken:5,04V
+1. Leicht feucht: 5,96V
+2.: 4,6V
+3.: 4,52V
+4.: 4,44V
+5.: 4,32V optimal nach gießen
+6.: 4,28V
+7.: 4,08V optimale feuchtigkeit beim gießen
+8.: <4V zu feucht
+
+Feuchtigkeitsmessung: U0=5,08V, R=1kOhm
+Trocken: 4,68V
+1. Leicht feucht: 3,4V
+2.: 2,72V
+3.: 2,62V optimal nach gießen
+4.: 2,44V
+5.: 2,4V optimal bei gießen
